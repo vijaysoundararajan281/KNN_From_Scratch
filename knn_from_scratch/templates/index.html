@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>KNN FROM SCRATCH</title>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet'>
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+
+
+</head>
+
+<body>
+  <style>
+    body{
+      background-color: hsl(0, 20%, 97%);
+      background-image: url('static/css/img/blue1.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: cover;
+      text-align: center;
+      padding-top: 100px;
+    }
+  </style>
+  <div class="container">
+    <form action='/predict' method="post">
+      <h1>KNN FROM SCRATCH</h1>
+
+      <input type="number" id="num1" placeholder="Enter number 1" name="1"><br><br>
+
+      <input type="number" id="num2" placeholder="Enter number 2" name="2"><br><br>
+
+
+      <button type="submit">Classify</button>
+
+    </form>
+    <br>
+    <br>
+    {{pred}}
+  </div>
+
+
+</body>
+
+</html>
